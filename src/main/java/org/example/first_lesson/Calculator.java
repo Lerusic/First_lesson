@@ -17,12 +17,10 @@ public class Calculator {
 
     public static double calculator(double first, double second, String symbol) {
         if (symbol.equals("+")) {
-            double result = first + second;
-            return result;
+            return first + second;
         }
         if (symbol.equals("-")) {
-            double result = first - second;
-            return result;
+            return first - second;
         }
         if (symbol.equals("*")) {
             double result = first * second;
@@ -31,10 +29,10 @@ public class Calculator {
         if (symbol.equals("/")) {
             if (second == 0) {
                 return 0;
-            }
-            else {
+            } else {
                 return first / second;
             }
         }
-return 0;}
+        return 0;
+    }
 }
