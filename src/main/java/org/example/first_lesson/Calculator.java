@@ -6,30 +6,35 @@ public class Calculator {
 
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter First Number");
-        int first = scanner.nextInt();
-        System.out.println("Enter Second Number");
-        int second = scanner.nextInt();
-        System.out.println("Enter symbol");
-        String symbol = scanner.next();
-        System.out.println(symbol);
+        System.out.println("Expected true.Result:" + (calculator(2, 3, "+") == 5.0));
+        System.out.println("Expected true.Result:" + (calculator(5, 10, "-") == -5.0));
+        System.out.println("Expected true.Result:" + (calculator(4, 2.5, "*") == 10.0));
+        System.out.println("Expected true.Result:" + (calculator(7, 2, "/") == 3.5));
+        System.out.println("Expected true.Result:" + (calculator(0, -5, "*") == 0.0));
+        System.out.println("Expected true.Result:" + (calculator(0.1, 0.2, "+") == 0.3));
+
+    }
+
+    public static double calculator(double first, double second, String symbol) {
         if (symbol.equals("+")) {
-            int result = first + second;
-            System.out.println(result);
+            double result = first + second;
+            return result;
         }
         if (symbol.equals("-")) {
-            int result = first - second;
-            System.out.println(result);
+            double result = first - second;
+            return result;
         }
         if (symbol.equals("*")) {
-            int result = first * second;
-            System.out.println(result);
+            double result = first * second;
+            return result;
         }
         if (symbol.equals("/")) {
-            int result = first / second;
-            System.out.println(result);
-
+            if (second == 0) {
+                return 0;
+            }
+            else {
+                return first / second;
+            }
         }
-    }
+return 0;}
 }
