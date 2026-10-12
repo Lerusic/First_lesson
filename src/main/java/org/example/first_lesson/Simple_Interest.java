@@ -4,15 +4,20 @@ import java.util.Scanner;
 
 public class Simple_Interest {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter amount");
-        double amount = scanner.nextInt();
-        System.out.println("Enter percentage");
-        double percentage = scanner.nextInt();
-        System.out.println("Enter period in years");
-        double period = scanner.nextInt();
-        double final_summ = amount*(1+percentage/100 * period);
-        System.out.println("Your final summ is "+ final_summ);
+        System.out.println("Expected true.Result:" + (simpleInterest(1000, 5, 1)== 50.0));
+        System.out.println("Expected true.Result:" + (simpleInterest(1050, 5, 1)== 52.));
+        System.out.println("Expected true.Result:" + (simpleInterest(1000, 3.5, 2)== 70.0));
+        System.out.println("Expected true.Result:" + (simpleInterest(1000, 5, 1.5)== 55.0));
+        System.out.println("Expected true.Result:" + (simpleInterest(999.99, 5, 1)== 50.00));// как округлить
+        System.out.println("Expected true.Result:" + (simpleInterest(10000000, 10, 30)== 30000000.00));
+        System.out.println("Expected true.Result:" + (simpleInterest(1000, 0, 5)== 0.0));
+        System.out.println("Expected true.Result:" + (simpleInterest(1000, 5, 0)== 0.0));
+        System.out.println("Expected true.Result:" + (simpleInterest(1000, -5, 1)));
+        System.out.println("Expected true.Result:" + (simpleInterest(-1000, 5, 1)));// как выявить отрицательные цифры
+        System.out.println("Expected true.Result:" + (simpleInterest(1000, 0.05, 1)));
+
 
     }
+    public static double simpleInterest (double amount, double percentage, double period){
+        return amount*(percentage/100 * period);}
 }
