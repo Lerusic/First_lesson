@@ -12,7 +12,7 @@ public class Calculator {
         System.out.println("Expected true.Result:" + (calculator(7, 2, "/") == 3.5));
         System.out.println("Expected true.Result:" + (calculator(0, -5, "*") == 0.0));
         System.out.println("Expected true.Result:" + (calculator(0.1, 0.2, "+") == 0.3));
-
+//asfas
     }
 
     public static double calculator(double first, double second, String symbol) {
