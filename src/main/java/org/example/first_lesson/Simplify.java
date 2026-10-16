@@ -5,22 +5,29 @@ import java.util.Scanner;
 
 public class Simplify {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter First Number");
-        int first = scanner.nextInt();
-        System.out.println("Enter Second Number");
-        int second = scanner.nextInt();
-        System.out.println("Enter Third Number");
-        int third = scanner.nextInt();
-        if (first > second && first > third) {
-            System.out.println(first);
+        System.out.println("Expected true.Result:" + (biggerNumber(1, 2, 3) == 3));
+        System.out.println("Expected true.Result:" + (biggerNumber(2, 3, 1) == 3));
+        System.out.println("Expected true.Result:" + (biggerNumber(3, 1,2) == 3));
+        System.out.println("Expected true.Result:" + (biggerNumber(3, 2, 1) == 3));
+        System.out.println("Expected true.Result:" + (biggerNumber(5, 5, 5) == 5));
+        System.out.println("Expected true.Result:" + (biggerNumber(5, 1, 5) == 5));
+        System.out.println("Expected true.Result:" + (biggerNumber(5, 5, 1) == 5));
+        System.out.println("Expected true.Result:" + (biggerNumber(-1, -2, -3) == -1));
+        System.out.println("Expected true.Result:" + (biggerNumber(2147483647, 0, -1) == 2147483647));
+    }
+
+    public static int biggerNumber(int first, int second, int third) {
+        if (first >= second && first >= third) {
+            return first;
         }
-        if (second > third) {
-            System.out.println(second);
+        if (second >= third) {
+            return second;
         } else {
-            System.out.println(third);
+            return third;
         }
     }
+
+
 }
 
 

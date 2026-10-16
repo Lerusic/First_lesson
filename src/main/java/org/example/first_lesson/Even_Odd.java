@@ -4,18 +4,26 @@ import java.util.Scanner;
 
 public class Even_Odd {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter number");
-        int number = scanner.nextInt();
-        int even = number % 2;
+        System.out.println("Expected true.Result:" + (evenOdd(2) == "Even"));
+        System.out.println("Expected true.Result:" + (evenOdd(7) == "Odd"));
+        System.out.println("Expected true.Result:" + (evenOdd(0) == "Even"));
+        System.out.println("Expected true.Result:" + (evenOdd(-4) == "Even"));
+        System.out.println("Expected true.Result:" + (evenOdd(-3) == "Odd"));
+        System.out.println("Expected true.Result:" + (evenOdd(-1) == "Odd"));
+        System.out.println("Expected true.Result:" + (evenOdd(2147483647) == "Odd"));
+        System.out.println("Expected true.Result:" + (evenOdd(-2147483648) == "Even"));
+        System.out.println("Expected true.Result:" + (evenOdd(4.0) == "Even"));
+    }
+    public static String evenOdd(double number)
+    {
+        double even = number % 2;
         if (even == 0) {
-            System.out.println("Your number is even");
+            return "Even";
         }
         else {
-            System.out.println("Your number is odd");
+            return "Odd";
         }
     }
-
 
 }
 
