@@ -1,4 +1,4 @@
-package org.example.first_lesson;
+package org.example.hw1;
 
 import java.util.Scanner;
 

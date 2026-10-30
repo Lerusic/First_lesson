@@ -1,4 +1,4 @@
-package org.example.first_lesson;
+package org.example.hw5;
 
 public class GradeCalculator {
     public static void main(String[] args) {
