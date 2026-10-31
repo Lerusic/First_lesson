@@ -1,6 +1,5 @@
-package org.example.first_lesson;
+package org.example.hw5;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 public class MultiplicationTable {
     public static void main(String[] args) {

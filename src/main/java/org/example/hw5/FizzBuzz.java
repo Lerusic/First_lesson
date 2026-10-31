@@ -1,6 +1,4 @@
-package org.example.first_lesson;
-
-import java.util.Scanner;
+package org.example.hw5;
 
 public class FizzBuzz {
     public static void main(String[] args) {
