@@ -18,7 +18,7 @@ public class BinaryResearch {
         while (low <= high) {
             int middle = (low + high) / 2;
             if (a[middle] == target) {
-                return a[middle];
+                return middle;
             } else if (a[middle] < target) {
                 low = middle + 1;
             } else {
