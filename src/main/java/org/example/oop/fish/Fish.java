@@ -26,8 +26,9 @@ public abstract class Fish extends Animals implements Swimmable {
     public void swim() {
         System.out.println(name + "swimming");
     }
+
     @Override
-    public String makeSound(){
+    public String makeSound() {
         return "";
     }
 }

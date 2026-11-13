@@ -5,23 +5,28 @@ import org.example.oop.animals.Animals;
 public abstract class Mammal extends Animals {
     protected boolean hasFur;
 
-    public Mammal(String name, int age, boolean hasFur){
+    public Mammal(String name, int age, boolean hasFur) {
         super(name, age);
         this.hasFur = hasFur;
     }
-    public void feedMild(){
+
+    public void feedMild() {
         System.out.println(name + "feeding babies with milk");
     }
-    public void breatheWithLungs(){
+
+    public void breatheWithLungs() {
         System.out.println(name + "breathe with lungs");
     }
-    public boolean hasFur(){
+
+    public boolean hasFur() {
         return hasFur;
     }
-    public interface Swimmable{
+
+    public interface Swimmable {
         void swim();
     }
-    public interface Playable{
+
+    public interface Playable {
         void play();
     }
 }
