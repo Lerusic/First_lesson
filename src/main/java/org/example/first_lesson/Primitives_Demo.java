@@ -1,6 +1,4 @@
-package org.example;
-
-import java.util.Scanner;
+package org.example.first_lesson;
 
 public class Primitives_Demo {
     public static void main(String[] args) {
