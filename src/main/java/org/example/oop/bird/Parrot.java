@@ -1,10 +1,12 @@
 package org.example.oop.bird;
 
+import org.example.oop.behavior.Flyable;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class Parrot extends Birds implements Birds.Flyable {
+public class Parrot extends Bird implements Flyable {
     private final List<String> words = new ArrayList<>();
     public final Random random = new Random();
 
@@ -18,11 +20,6 @@ public class Parrot extends Birds implements Birds.Flyable {
     }
 
     @Override
-    public void fly() {
-        System.out.println(name + "flying");
-    }
-
-    @Override
     public String makeSound() {
         if (words.isEmpty()) {
             return "Chick-chirick";
@@ -30,4 +27,8 @@ public class Parrot extends Birds implements Birds.Flyable {
         return words.get(random.nextInt(words.size()));
     }
 
+    @Override
+    public void fly() {
+        System.out.println(name + "flying");
+    }
 }

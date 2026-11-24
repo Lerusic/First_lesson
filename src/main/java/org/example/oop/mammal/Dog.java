@@ -1,6 +1,8 @@
 package org.example.oop.mammal;
 
-public class Dog extends Mammal implements Mammal.Playable {
+import org.example.oop.behavior.Playable;
+
+public class Dog extends Mammal implements Playable {
     public Dog(String name, int age) {
         super(name, age, true);
     }

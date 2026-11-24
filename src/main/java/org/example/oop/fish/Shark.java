@@ -1,8 +1,8 @@
 package org.example.oop.fish;
 
-import java.sql.SQLOutput;
+import org.example.oop.behavior.Swimmable;
 
-public class Shark extends Fish {
+public class Shark extends Fish implements Swimmable {
     public Shark(String name, int age) {
         super(name, age, true);
     }
@@ -11,4 +11,8 @@ public class Shark extends Fish {
         System.out.println(name + "hunting");
     }
 
+    @Override
+    public void swim() {
+        System.out.println(name + "swimming");
+    }
 }

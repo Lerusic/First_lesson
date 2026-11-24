@@ -1,6 +1,8 @@
 package org.example.oop.reptile;
 
-public class Turtle extends Reptiles implements Reptiles.Swimmable {
+import org.example.oop.behavior.Swimmable;
+
+public class Turtle extends Reptile implements Swimmable {
     public Turtle(String name, int age) {
         super(name, age, false);
     }

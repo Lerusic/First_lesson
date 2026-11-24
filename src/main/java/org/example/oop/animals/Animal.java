@@ -1,10 +1,10 @@
 package org.example.oop.animals;
 
-public abstract class Animals {
+public abstract class Animal {
     protected final String name;
     protected int age;
 
-    public Animals(String name, int age) {
+    public Animal(String name, int age) {
         this.name = name;
         this.age = age;
     }

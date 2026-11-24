@@ -13,4 +13,9 @@ public class Piranha extends Fish {
     public void hunt() {
         System.out.println(name + "hunting");
     }
+
+    @Override
+    public void swim() {
+        System.out.println(name + "swimming");
+    }
 }

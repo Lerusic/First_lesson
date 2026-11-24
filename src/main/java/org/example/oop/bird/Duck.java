@@ -1,6 +1,9 @@
 package org.example.oop.bird;
 
-public class Duck extends Birds implements Birds.Flyable, Birds.Swimmable {
+import org.example.oop.behavior.Flyable;
+import org.example.oop.behavior.Swimmable;
+
+public class Duck extends Bird implements Flyable, Swimmable {
     public Duck(String name, int age) {
         super(name, age);
     }

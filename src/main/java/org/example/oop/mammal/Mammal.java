@@ -1,8 +1,8 @@
 package org.example.oop.mammal;
 
-import org.example.oop.animals.Animals;
+import org.example.oop.animals.Animal;
 
-public abstract class Mammal extends Animals {
+public abstract class Mammal extends Animal {
     protected boolean hasFur;
 
     public Mammal(String name, int age, boolean hasFur) {

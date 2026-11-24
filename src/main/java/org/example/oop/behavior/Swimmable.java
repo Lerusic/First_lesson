@@ -1,4 +1,4 @@
-package org.example.oop.fish;
+package org.example.oop.behavior;
 
 public interface Swimmable {
     void swim();

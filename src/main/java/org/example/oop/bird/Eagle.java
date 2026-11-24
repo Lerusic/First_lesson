@@ -1,13 +1,10 @@
 package org.example.oop.bird;
 
-public class Eagle extends Birds implements Birds.Flyable {
+import org.example.oop.behavior.Flyable;
+
+public class Eagle extends Bird implements Flyable {
     public Eagle(String name, int age) {
         super(name, age);
-    }
-
-    @Override
-    public void fly() {
-        System.out.println(name + "flying");
     }
 
     public void hunt() {
@@ -18,4 +15,10 @@ public class Eagle extends Birds implements Birds.Flyable {
     public String makeSound() {
         return "Kee-kee-kee";
     }
+
+    @Override
+    public void fly() {
+        System.out.println(name + "flying");
+    }
 }
+

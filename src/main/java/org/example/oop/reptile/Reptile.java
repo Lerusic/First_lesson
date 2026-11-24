@@ -1,11 +1,11 @@
 package org.example.oop.reptile;
 
-import org.example.oop.animals.Animals;
+import org.example.oop.animals.Animal;
 
-public abstract class Reptiles extends Animals {
+public abstract class Reptile extends Animal {
     protected boolean venomous;
 
-    public Reptiles(String name, int age, boolean venomous) {
+    public Reptile(String name, int age, boolean venomous) {
         super(name, age);
         this.venomous = venomous;
     }
@@ -26,7 +26,4 @@ public abstract class Reptiles extends Animals {
         return venomous;
     }
 
-    public interface Swimmable {
-        void swim();
-    }
 }

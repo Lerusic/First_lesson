@@ -1,8 +1,8 @@
 package org.example.oop.mammal;
 
-import org.w3c.dom.ls.LSOutput;
+import org.example.oop.behavior.Playable;
 
-public class Cat extends Mammal implements Mammal.Playable {
+public class Cat extends Mammal implements Playable {
     public Cat(String name, int age) {
         super(name, age, true);
     }

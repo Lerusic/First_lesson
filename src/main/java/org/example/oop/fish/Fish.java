@@ -1,9 +1,10 @@
 package org.example.oop.fish;
 
-import org.example.oop.animals.Animals;
+import org.example.oop.animals.Animal;
+import org.example.oop.behavior.Swimmable;
 
 
-public abstract class Fish extends Animals implements Swimmable {
+public abstract class Fish extends Animal implements Swimmable {
     protected boolean saltwater;
 
     public Fish(String name, int age, boolean saltwater) {
@@ -23,13 +24,11 @@ public abstract class Fish extends Animals implements Swimmable {
         return saltwater;
     }
 
-    public void swim() {
-        System.out.println(name + "swimming");
-    }
-
     @Override
     public String makeSound() {
         return "";
     }
+
+    public abstract void swim();
 }
 
